@@ -1,7 +1,7 @@
 <template>
   <div class="map-wrapper">
-    <h2>地图三级下钻</h2>
-    <MapDrilling></MapDrilling>
+    <h2>地图三级下钻演示</h2>
+    <MapDrilling class="mapdriliing"></MapDrilling>
   </div>
 </template>
 
@@ -20,9 +20,17 @@ export default {
   width: 100%;
   height: 100%;
   padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   h2 {
     font-size: 24px;
-    margin-bottom: 12px;
+    margin-top: 16px;
+    margin-bottom: 28px;
+  }
+  .mapdriliing{
+    width: 60%;
+    height: calc(100% - 24px - 16px - 28px);
   }
 }
 </style>

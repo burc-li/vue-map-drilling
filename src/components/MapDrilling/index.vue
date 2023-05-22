@@ -1,5 +1,5 @@
 <template>
-  <div class="MapUpDownWrap">
+  <div class="mapdrilling-inner">
     <div id="chart" class="chart"></div>
   </div>
 </template>
@@ -315,18 +315,18 @@ export default {
 </script>
 
 <style scoped lang="less">
-.MapUpDownWrap {
+.mapdrilling-inner {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 90vw;
-  height: 98vh;
+  width: 100%;
+  height: 100%;
   .chart {
-    width: 70%;
+    width: 100%;
     height: 100%;
     border-radius: 8px;
-    border: 2px solid #de5e60;
-    background-color: rgba(0, 0, 0, 0.8) !important;
+    border: 4px solid #de5e60;
+    background-color: rgba(0, 0, 0, 0.8);
   }
 }
 </style>
