@@ -325,8 +325,7 @@ export default {
     width: 100%;
     height: 100%;
     border-radius: 8px;
-    border: 4px solid #de5e60;
-    background-color: rgba(0, 0, 0, 0.8);
+    border: 3px solid #de5e60;
   }
 }
 </style>

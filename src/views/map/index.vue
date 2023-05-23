@@ -23,7 +23,9 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: no-repeat 2% 5% url('../../assets/images/bg.png');
   h2 {
+    color: #fff;
     font-size: 24px;
     margin-top: 16px;
     margin-bottom: 28px;
