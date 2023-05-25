@@ -11816,7 +11816,7 @@
     },
     {
       "type": "Feature",
-      "properties": { "adcode": 100000, "name": "", "adchar": "JD" },
+      "properties": { "adcode": 100000, "name": "九段线", "adchar": "JD" },
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -12154,5 +12154,11 @@
       }
     }
   ],
-  "attach": ["南海诸岛"]
+  "attach": [
+    {
+      "adcode": 1000001,
+      "name": "南海诸岛",
+      "adchar": "NHZD"
+    }
+  ]
 }
