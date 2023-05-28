@@ -70,12 +70,12 @@ export default {
 
     // 绑定自定义单击事件
     bindClickChart () {
-      this.mapChart.on('click', async params => {
+      this.mapChart.on('click', async e => {
         const {
           seriesName,
           name,
           data: { adcode },
-        } = params
+        } = e
 
         // 可下钻到二级地图（23个省、5个自治区、4个直辖市、2个特别行政区）
         if (EXISTING_SECOND_LAYER_REGION.find(i => i.adcode === adcode)) {
@@ -99,7 +99,8 @@ export default {
     // 绑定自定义右击事件
     bindContextmenuChart () {
       // 取消右击默认事件
-      document.oncontextmenu = e => e.preventDefault()
+      const container = document.getElementById('chart')
+      container.oncontextmenu = e => e.preventDefault()
       // 绑定自定义右击事件
       this.mapChart.on('contextmenu', () => {
         this.goBack()
